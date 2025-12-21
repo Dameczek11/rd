@@ -26,7 +26,7 @@ export const Footer = () => {
             <h3 className="text-2xl font-bold">Śledź mnie</h3>
             <div className="flex gap-4 mt-2">
               <a
-                href="https://www.facebook.com/"
+                href="https://www.facebook.com/profile.php?id=100011249507774"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-neutral-300 hover:text-gold transition-colors"
@@ -35,7 +35,7 @@ export const Footer = () => {
                 <FaFacebookF className="hover:text-[#c7b170] active:text-[#c7b170] transition-smooth" size={24} />
               </a>
               <a
-                href="https://www.instagram.com/"
+                href="https://www.instagram.com/dykiel_/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-neutral-300 hover:text-gold transition-colors"
@@ -44,7 +44,7 @@ export const Footer = () => {
                 <FaInstagram className="hover:text-[#c7b170] active:text-[#c7b170] transition-smooth" size={24} />
               </a>
               <a
-                href="https://www.tiktok.com/"
+                href="https://www.tiktok.com/@radoslawdykiel/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-neutral-300 hover:text-gold transition-colors"
