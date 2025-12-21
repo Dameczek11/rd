@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+body {
+  font-family: var(--font-inter), sans-serif;
+}
+
+.text-gold {
+  color: #c7b170;
+}
+
+.bg-gold {
+  background-color: #c7b170;
+}
+
+.transition-smooth {
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
