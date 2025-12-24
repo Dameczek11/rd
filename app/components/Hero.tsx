@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export const Hero = () => {
   return (
-    <section id="top" className="bg-black w-full p-5 py-10">
+    <section id="top" className="bg-black w-full p-5 py-10 md:py-20">
       <div className="max-w-7xl mx-auto flex md:flex-row flex-col-reverse items-center">
         <div className="md:w-1/2 flex flex-col gap-3 items-baseline">
           <h1 className="flex flex-col text-[clamp(3rem,8vw,5rem)] leading-tight font-extrabold">
@@ -26,7 +26,7 @@ export const Hero = () => {
           </button>
         </div>
         <div className="md:w-1/2">
-          <Image src="/mes.png" width={1000} height={1000} alt="Me" />
+          <Image src="/mes.png" width={1200} height={1200} alt="Me" />
         </div>
       </div>
     </section>

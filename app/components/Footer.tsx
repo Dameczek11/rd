@@ -10,7 +10,14 @@ export const Footer = () => {
     <footer className="w-full bg-black border-t border-neutral-700/70 py-24 p-5">
       <div className="max-w-7xl mx-auto flex flex-col gap-8">
         <div className="flex w-1/2 flex-col md:flex-row justify-between items-start gap-8">
-          <Image onClick={() => scrollToId("top")} src="/logo.png" width={100} height={100} alt="Logo" />
+          <Image
+            className="cursor-pointer"
+            onClick={() => scrollToId("top")}
+            src="/logo.png"
+            width={100}
+            height={100}
+            alt="Logo"
+          />
           <div className="flex flex-col gap-3">
             <h3 className="text-2xl font-bold">Kontakt</h3>
             <p className="flex items-center gap-2 text-neutral-300">

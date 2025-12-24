@@ -12,7 +12,6 @@ export const ContactForm = () => {
     const form = event.currentTarget as HTMLFormElement;
     const formData = new FormData(form);
 
-    // Twój klucz Web3Forms
     formData.append("access_key", "5b02de90-13ae-48dc-a623-b55d30277146");
 
     try {
@@ -37,10 +36,10 @@ export const ContactForm = () => {
   return (
     <form
       onSubmit={onSubmit}
-      className="max-w-3xl mx-auto border border-neutral-700/70 p-6 bg-neutral-900 rounded-xl shadow-lg flex flex-col gap-6"
+      className="max-w-3xl mx-auto border border-neutral-700/70 p-6 bg-neutral-900 rounded-2xl shadow-lg flex flex-col gap-6"
     >
       <div className="flex flex-col">
-        <label htmlFor="name" className="text-white font-semibold mb-1">
+        <label htmlFor="name" className="text-white font-semibold mb-2">
           Imię i nazwisko
         </label>
         <input
@@ -49,12 +48,12 @@ export const ContactForm = () => {
           name="name"
           placeholder="np. Jan K"
           required
-          className="px-4 border border-neutral-700/70 outline-0 focus:outline-2 outline-[#c7b170] py-3 rounded-lg bg-neutral-800 text-white placeholder-neutral-400 transition"
+          className="px-4 border border-neutral-700/70 outline-0 focus:outline-2 outline-[#c7b170] py-3 rounded-xl bg-neutral-800 text-white placeholder-neutral-400 transition"
         />
       </div>
 
       <div className="flex flex-col">
-        <label htmlFor="email" className="text-white font-semibold mb-1">
+        <label htmlFor="email" className="text-white font-semibold mb-2">
           Email
         </label>
         <input
@@ -63,12 +62,12 @@ export const ContactForm = () => {
           name="email"
           placeholder="np. jank@gmail.com"
           required
-          className="px-4 border border-neutral-700/70 outline-0 focus:outline-2 outline-[#c7b170] py-3 rounded-lg bg-neutral-800 text-white placeholder-neutral-400 transition"
+          className="px-4 border border-neutral-700/70 outline-0 focus:outline-2 outline-[#c7b170] py-3 rounded-xl bg-neutral-800 text-white placeholder-neutral-400 transition"
         />
       </div>
 
       <div className="flex flex-col">
-        <label htmlFor="phone" className="text-white font-semibold mb-1">
+        <label htmlFor="phone" className="text-white font-semibold mb-2">
           Numer telefonu
         </label>
         <input
@@ -76,12 +75,12 @@ export const ContactForm = () => {
           id="phone"
           name="phone"
           placeholder="np. 123 456 789"
-          className="px-4 border border-neutral-700/70 outline-0 focus:outline-2 outline-[#c7b170] py-3 rounded-lg bg-neutral-800 text-white placeholder-neutral-400 transition"
+          className="px-4 border border-neutral-700/70 outline-0 focus:outline-2 outline-[#c7b170] py-3 rounded-xl bg-neutral-800 text-white placeholder-neutral-400 transition"
         />
       </div>
 
       <div className="flex flex-col">
-        <label htmlFor="message" className="text-white font-semibold mb-1">
+        <label htmlFor="message" className="text-white font-semibold mb-2">
           Wiadomość
         </label>
         <textarea
@@ -90,13 +89,13 @@ export const ContactForm = () => {
           rows={5}
           placeholder="Twoja wiadomość..."
           required
-          className="px-4 border border-neutral-700/70 outline-0 focus:outline-2 outline-[#c7b170] py-3 rounded-lg bg-neutral-800 text-white placeholder-neutral-400 transition resize-none"
+          className="px-4 border border-neutral-700/70 outline-0 focus:outline-2 outline-[#c7b170] py-3 rounded-xl bg-neutral-800 text-white placeholder-neutral-400 transition resize-none"
         />
       </div>
 
       <button
         type="submit"
-        className="text-white bg-[#c7b170] hover:bg-[#d1ba7e] font-semibold px-6 py-3 rounded-lg active:bg-[#d1ba7e] transition-smooth w-full md:w-auto cursor-pointer"
+        className="text-white bg-[#c7b170] hover:bg-[#d1ba7e] font-semibold px-6 py-3 rounded-xl active:bg-[#d1ba7e] transition-smooth w-full md:w-auto cursor-pointer"
       >
         Wyślij wiadomość
       </button>
